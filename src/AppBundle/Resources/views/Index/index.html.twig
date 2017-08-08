@@ -1,4 +1,7 @@
 {% extends 'AppBundle:default:base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
 
 {% block body %}
     
@@ -22,8 +25,12 @@
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="images/home/girl1.jpg" class="girl img-responsive" alt="" />
-									<img src="images/home/pricing.png"  class="pricing" alt="" />
+                                                                    {% image '@AppBundle/Resources/public/images/home/girl1.jpg'   %}
+                                                                        <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                    {% endimage %}
+                                                                    {% image '@AppBundle/Resources/public/images/home/pricing.png'   %}
+                                                                        <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                    {% endimage %}
 								</div>
 							</div>
 							<div class="item">
@@ -34,8 +41,12 @@
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="images/home/girl2.jpg" class="girl img-responsive" alt="" />
-									<img src="images/home/pricing.png"  class="pricing" alt="" />
+                                                                    {% image '@AppBundle/Resources/public/images/home/girl2.jpg'   %}
+                                                                        <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                    {% endimage %}
+                                                                    {% image '@AppBundle/Resources/public/images/home/pricing.png'   %}
+                                                                        <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                    {% endimage %}
 								</div>
 							</div>
 							
@@ -47,8 +58,12 @@
 									<button type="button" class="btn btn-default get">Get it now</button>
 								</div>
 								<div class="col-sm-6">
-									<img src="images/home/girl3.jpg" class="girl img-responsive" alt="" />
-									<img src="images/home/pricing.png" class="pricing" alt="" />
+                                                                    {% image '@AppBundle/Resources/public/images/home/girl3.jpg'   %}
+                                                                        <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                    {% endimage %}
+                                                                    {% image '@AppBundle/Resources/public/images/home/pricing.png'   %}
+                                                                        <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                    {% endimage %}
 								</div>
 							</div>
 							
@@ -204,7 +219,9 @@
 						</div><!--/price-range-->
 						
 						<div class="shipping text-center"><!--shipping-->
-							<img src="images/home/shipping.jpg" alt="" />
+                                                    {% image '@AppBundle/Resources/public/images/home/shipping.jpg'   %}
+                                                        <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                    {% endimage %}
 						</div><!--/shipping-->
 					
 					</div>
@@ -217,7 +234,9 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 										<div class="productinfo text-center">
-											<img src="images/home/product1.jpg" alt="" />
+                                                                                        {% image '@AppBundle/Resources/public/images/home/product1.jpg'   %}
+                                                                                            <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                        {% endimage %}
 											<h2>$56</h2>
 											<p>Easy Polo Black Edition</p>
 											<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -242,7 +261,9 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/product2.jpg" alt="" />
+                                                                                {% image '@AppBundle/Resources/public/images/home/product2.jpg'   %}
+                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                {% endimage %}
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -267,7 +288,9 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/product3.jpg" alt="" />
+										{% image '@AppBundle/Resources/public/images/home/product3.jpg'   %}
+                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                {% endimage %}
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -292,7 +315,9 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/product4.jpg" alt="" />
+										{% image '@AppBundle/Resources/public/images/home/product4.jpg'   %}
+                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                {% endimage %}
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -318,7 +343,9 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/product5.jpg" alt="" />
+										{% image '@AppBundle/Resources/public/images/home/product5.jpg'   %}
+                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                {% endimage %}
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -344,7 +371,9 @@
 							<div class="product-image-wrapper">
 								<div class="single-products">
 									<div class="productinfo text-center">
-										<img src="images/home/product6.jpg" alt="" />
+										{% image '@AppBundle/Resources/public/images/home/product6.jpg'   %}
+                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                {% endimage %}
 										<h2>$56</h2>
 										<p>Easy Polo Black Edition</p>
 										<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -384,7 +413,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery1.jpg" alt="" />
+                                                                                                {% image '@AppBundle/Resources/public/images/home/gallery1.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -397,7 +428,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery2.jpg" alt="" />
+                                                                                                {% image '@AppBundle/Resources/public/images/home/gallery2.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -410,7 +443,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery3.jpg" alt="" />
+                                                                                                {% image '@AppBundle/Resources/public/images/home/gallery3.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -423,7 +458,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery4.jpg" alt="" />
+                                                                                                {% image '@AppBundle/Resources/public/images/home/gallery4.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -439,7 +476,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery4.jpg" alt="" />
+                                                                                                {% image '@AppBundle/Resources/public/images/home/gallery4.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -452,7 +491,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery3.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery3.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -465,7 +506,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery2.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery2.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -478,7 +521,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery1.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery1.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -494,7 +539,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery3.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery3.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -507,7 +554,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery4.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery4.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -520,7 +569,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery1.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery1.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -533,7 +584,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery2.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery2.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -549,7 +602,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery1.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery1.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -562,7 +617,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery2.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery2.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -575,7 +632,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery3.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery3.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -588,7 +647,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery4.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery4.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -604,7 +665,9 @@
 									<div class="product-image-wrapper">
 										<div class="single-products">
 											<div class="productinfo text-center">
-												<img src="images/home/gallery2.jpg" alt="" />
+												{% image '@AppBundle/Resources/public/images/home/gallery2.jpg'   %}
+                                                                                                    <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                {% endimage %}
 												<h2>$56</h2>
 												<p>Easy Polo Black Edition</p>
 												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -667,6 +730,9 @@
 											<div class="single-products">
 												<div class="productinfo text-center">
 													<img src="images/home/recommend1.jpg" alt="" />
+                                                                                                        {% image '@AppBundle/Resources/public/images/home/recommend1.jpg'   %}
+                                                                                                            <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                        {% endimage %}
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -679,7 +745,9 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="images/home/recommend2.jpg" alt="" />
+													{% image '@AppBundle/Resources/public/images/home/recommend2.jpg'   %}
+                                                                                                            <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                        {% endimage %}
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -692,7 +760,9 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="images/home/recommend3.jpg" alt="" />
+													{% image '@AppBundle/Resources/public/images/home/recommend3.jpg'   %}
+                                                                                                            <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                        {% endimage %}
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -707,7 +777,9 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="images/home/recommend1.jpg" alt="" />
+													{% image '@AppBundle/Resources/public/images/home/recommend1.jpg'   %}
+                                                                                                            <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                        {% endimage %}
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -720,7 +792,9 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="images/home/recommend2.jpg" alt="" />
+													{% image '@AppBundle/Resources/public/images/home/recommend2.jpg'   %}
+                                                                                                            <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                        {% endimage %}
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -733,7 +807,9 @@
 										<div class="product-image-wrapper">
 											<div class="single-products">
 												<div class="productinfo text-center">
-													<img src="images/home/recommend3.jpg" alt="" />
+													{% image '@AppBundle/Resources/public/images/home/recommend3.jpg'   %}
+                                                                                                            <img src="{{ asset_url }}"   alt="image caroucel1, recouvrement martinique Reunion Mayotte Guadeloupe" >
+                                                                                                        {% endimage %}
 													<h2>$56</h2>
 													<p>Easy Polo Black Edition</p>
 													<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
@@ -757,8 +833,4 @@
 			</div>
 		</div>
 	</section>
-{% endblock %}
-
-{% block stylesheets %}
-
 {% endblock %}
