@@ -1,0 +1,36 @@
+{% extends 'AppBundle:default:base.html.twig' %}
+
+{% block body %}
+    <h1>Produitstocke</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ produitStocke.id }}</td>
+            </tr>
+            <tr>
+                <th>Datestock</th>
+                <td>{{ produitStocke.dateStock }}</td>
+            </tr>
+            <tr>
+                <th>Quantitestock</th>
+                <td>{{ produitStocke.quantiteStock }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('business_produitstocke_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('business_produitstocke_edit', { 'id': produitStocke.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

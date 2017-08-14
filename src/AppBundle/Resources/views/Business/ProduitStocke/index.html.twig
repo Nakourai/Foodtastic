@@ -1,0 +1,41 @@
+{% extends 'AppBundle:default:base.html.twig' %}
+
+{% block body %}
+    <h1>Produitstockes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Datestock</th>
+                <th>Quantitestock</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for produitStocke in produitStockes %}
+            <tr>
+                <td><a href="{{ path('business_produitstocke_show', { 'id': produitStocke.id }) }}">{{ produitStocke.id }}</a></td>
+                <td>{{ produitStocke.dateStock }}</td>
+                <td>{{ produitStocke.quantiteStock }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('business_produitstocke_show', { 'id': produitStocke.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('business_produitstocke_edit', { 'id': produitStocke.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('business_produitstocke_new') }}">Create a new produitStocke</a>
+        </li>
+    </ul>
+{% endblock %}

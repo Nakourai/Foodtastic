@@ -1,0 +1,41 @@
+{% extends 'AppBundle:default:base.html.twig' %}
+
+{% block body %}
+    <h1>Prixes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Dateassignation</th>
+                <th>Montant</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for prix in prixes %}
+            <tr>
+                <td><a href="{{ path('business_prix_show', { 'id': prix.id }) }}">{{ prix.id }}</a></td>
+                <td>{% if prix.dateAssignation %}{{ prix.dateAssignation|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ prix.montant }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('business_prix_show', { 'id': prix.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('business_prix_edit', { 'id': prix.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('business_prix_new') }}">Create a new prix</a>
+        </li>
+    </ul>
+{% endblock %}

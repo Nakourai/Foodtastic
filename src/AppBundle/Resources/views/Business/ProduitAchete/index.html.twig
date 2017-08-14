@@ -1,0 +1,39 @@
+{% extends 'AppBundle:default:base.html.twig' %}
+
+{% block body %}
+    <h1>Produitachetes list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Quantite</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for produitAchete in produitAchetes %}
+            <tr>
+                <td><a href="{{ path('business_produitachete_show', { 'id': produitAchete.id }) }}">{{ produitAchete.id }}</a></td>
+                <td>{{ produitAchete.quantite }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('business_produitachete_show', { 'id': produitAchete.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('business_produitachete_edit', { 'id': produitAchete.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('business_produitachete_new') }}">Create a new produitAchete</a>
+        </li>
+    </ul>
+{% endblock %}

@@ -47,6 +47,13 @@ class Produit
     /**
      *
      * @var ArrayCollection 
+     * @ORM\OneToMany(targetEntity="Image", mappedBy="produit")
+     */
+    protected $images;
+    
+    /**
+     *
+     * @var ArrayCollection 
      * @ORM\OneToMany(targetEntity="ProduitStocke", mappedBy="produit")
      */
     protected $produitStockes;
